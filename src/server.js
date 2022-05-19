@@ -1,5 +1,6 @@
 const http = require("http");
 const app = require("./app");
+const { sequelize } = require('./models/models');
 
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
@@ -37,10 +38,13 @@ const errorHandler = (error) => {
 const server = http.createServer(app);
 
 server.on("error", errorHandler);
-server.on("listening", () => {
+server.on("listening", async () => {
   const address = server.address();
   const bind = typeof address === "string" ? `pipe ${address}` : `port ${port}`;
   console.log('Listening to port ' + 4000)
+  await sequelize.authenticate()
+  // await sequelize.sync()
+  console.log('Database Connected')
 });
 
 server.listen(port);

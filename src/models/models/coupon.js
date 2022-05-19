@@ -20,6 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     discount: DataTypes.INTEGER
   }, {
     sequelize,
+    tableName: 'coupon',
     modelName: 'Coupon',
   });
   return Coupon;
