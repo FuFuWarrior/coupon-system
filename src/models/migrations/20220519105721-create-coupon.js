@@ -9,13 +9,17 @@ module.exports = {
         type: DataTypes.INTEGER
       },
       code: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true        
       },
       is_valid: {
-        type: DataTypes.BOOLEAN
+        type: DataTypes.BOOLEAN,
+        allowNull: false
       },
       discount_type: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
       },
       discount: {
         type: DataTypes.INTEGER,

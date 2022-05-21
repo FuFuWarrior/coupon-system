@@ -43,7 +43,6 @@ server.on("listening", async () => {
   const bind = typeof address === "string" ? `pipe ${address}` : `port ${port}`;
   console.log('Listening to port ' + 4000)
   await sequelize.authenticate()
-  // await sequelize.sync()
   console.log('Database Connected')
 });
 

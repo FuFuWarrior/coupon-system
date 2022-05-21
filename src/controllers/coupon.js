@@ -44,12 +44,12 @@ class Coupons{
 
                 const coupon = await Coupon.findOne({where: { code }});
             
-                console.log(coupon.dataValues)
+                console.log(coupon.dataValues, 'COUPON FROM DB')
                 if(coupon){ 
                     if (coupon.is_valid){
                         // check the discount_type
                         
-                            if ( coupon.discount_type === 'percentage'){
+                            if ( coupon.discount_type === 'percent'){
                                 if (cart.length > coupon.items_limit){ 
                                     
                                     if ( totalPrice > coupon.discount_limit) {

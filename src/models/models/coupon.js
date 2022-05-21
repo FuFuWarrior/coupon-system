@@ -16,7 +16,8 @@ module.exports = (sequelize, DataTypes) => {
   Coupon.init({
     code: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      unique: true
     },
     is_valid: {
       type: DataTypes.BOOLEAN,
