@@ -4,7 +4,7 @@ const { sequelize } = require('./models/models');
 
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
-
+  // check if it nan
   if (isNaN(port)) {
     return val;
   }
