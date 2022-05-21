@@ -35,8 +35,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     items_limit:{
-      type: DataTypes.INTEGER,
-      allowNull: false
+      type: DataTypes.INTEGER
     }
   }, {
     sequelize,
