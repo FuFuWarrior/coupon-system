@@ -14,10 +14,30 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Coupon.init({
-    code: DataTypes.STRING,
-    is_valid: DataTypes.BOOLEAN,
-    discount_type: DataTypes.STRING,
-    discount: DataTypes.INTEGER
+    code: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    is_valid: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
+    },
+    discount_type: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    discount: {
+      type: DataTypes.INTEGER,
+      allowNull:false
+    },
+    discount_limit: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    items_limit:{
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
   }, {
     sequelize,
     tableName: 'coupon',

@@ -1,6 +1,6 @@
 const {sequelize, Cart} = require('../models/models/')
 
-class CartItems{
+class Carts{
 
     static async addCartItem(req, res){
         try {
@@ -51,4 +51,4 @@ class CartItems{
     }
 }
 
-module.exports = CartItems;
+module.exports = Carts;
