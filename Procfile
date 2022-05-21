@@ -1,1 +1,1 @@
-web: npm start src/server.js
+web: npm start ./src/server.js
