@@ -18,7 +18,8 @@ class Carts{
         } catch (error) {
             res.status(500).json({
                 status: 'error',
-                error: 'Something Unexpected happened'
+                error: 'Something Unexpected happened',
+                error
             });
         }
     }
