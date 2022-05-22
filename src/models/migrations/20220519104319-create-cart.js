@@ -13,8 +13,8 @@ module.exports = {
         allowNull: false
       },
       item_price: {
-        type: DataTypes.DECIMAL(5, 2),
-        allowNull: false
+        type: DataTypes.DECIMAL(4, 2),
+        allowNull: true
       },
       item_quantity: {
         type: DataTypes.INTEGER,
