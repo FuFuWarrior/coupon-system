@@ -21,7 +21,9 @@
       "native": true,
       "ssl": true, 
       "dialectOptions": {
-        "ssl": true
+        "ssl": {
+          "rejectUnauthorized": "false"
+        }
       }
     }
   }
