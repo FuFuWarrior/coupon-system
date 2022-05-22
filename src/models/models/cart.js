@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     item_price: {
-      type: DataTypes.DECIMAL(5, 2),
+      type: DataTypes.DECIMAL(4, 2),
       allowNull: true
     },
     item_quantity: {
@@ -28,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    tableName: 'cart',
+    tableName: 'carts',
     modelName: 'Cart',
   });
   return Cart;
