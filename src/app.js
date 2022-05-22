@@ -5,7 +5,7 @@ const couponRoutes = require('./routes/couponRoutes');
 
 app.use(express.json())
 
-app.use('/', () => {
+app.use('/', (req, res) => {
     res.status(200).json({
         message: 'welcome to the coupon system'
     })
