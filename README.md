@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-This is nodejs project powered by express and sequelize(postgres), so knowledge of javascript is required. If node is not installed download here.
+This is nodejs project powered by express and sequelize(postgres), so knowledge of javascript is required. If node is not installed download [here](https://nodejs.org/en/download/).
 
 Then follow the step below
 
@@ -32,11 +32,11 @@ You need to be a user to be able to use this API.
 
 ##### Response Body
 
-{
-    cart: array,
-    totalPrice: number,
-    adjustedTotalPrice: number,
-    discount: number
-}
+    {
+        cart: array,
+        totalPrice: number,
+        adjustedTotalPrice: number,
+        discount: number
+    }
 
-You can have access to the live API [Coupon system app]: https://coupon-scello.herokuapp.com/
+You can have access to the live API [Coupon system app](https://coupon-scello.herokuapp.com/)
