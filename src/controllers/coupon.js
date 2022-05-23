@@ -44,7 +44,6 @@ class Coupons{
 
                 const coupon = await Coupon.findOne({where: { code }});
             
-                console.log(coupon.dataValues, 'COUPON FROM DB')
                 if(coupon){ 
                     if (coupon.is_valid){
                         // check the discount_type
